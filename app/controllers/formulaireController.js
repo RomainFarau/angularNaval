@@ -3,7 +3,7 @@
 
 
 angular.module("navalModule")
-.controller('formulaireCtrl', function(GameService){
+.controller('FormulaireCtrl', function(GameService, $location){
 	var formCtrl=this;
 
 	/*$http({
@@ -43,19 +43,20 @@ angular.module("navalModule")
 	}
 
 	this.addGame=function(form){
-console.log("hopp", form);
+
 		if(form.$invalid) return;
 		var clone=angular.copy(formCtrl.game);
-		formCtrl.games.push(clone);
+		//formCtrl.games.push(clone);
 
 		/*$http({
 		method: "POST",
 		url: "http://192.168.229.21:3000/games",
 		data : clone
 		})*/
-		GameService.save(clone);
+		GameService.save(clone)
+			.then(function(){
+				$location.path("/")
+			})
+		
 	}
-	console.log(formCtrl.games)
-
-	
 })

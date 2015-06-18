@@ -1,16 +1,26 @@
 "use strict"
-angular.module("naval",['ngRoute'])
+angular.module("navalModule",['ngRoute'])
 .config(function ($routeProvider){
 
 	$routeProvider
-	.when('/', {
-		templateUrl: '../view/listeJeux.html', //Ici, mieux d'envoyer une page html : templateUrl: "truc.html"
-		controller: 'ViewCtrl',
+	.when("/", {
+		templateUrl: 'view/home.html', //Ici, mieux d'envoyer une page html : templateUrl: "truc.html"
+		controller: 'ViewController',
 		controllerAs: 'viewCtrl'
 	})
-	.when('/new', {
-		templateUrl: '../index.html',  //Ici, mieux d'envoyer une page html
-		controller: 'formulaireCtrl',
+	.when("/new", {
+		templateUrl: 'view/formulaire.html',  //Ici, mieux d'envoyer une page html
+		controller: 'FormulaireCtrl',
 		controllerAs: 'formCtrl'
 	})
+	.when("/test/:id", {
+		template: 'ici',  //Ici, mieux d'envoyer une page html
+		controller: function(){
+
+		},
+		controllerAs: 'newCtrl'
+	})
+	.otherwise({
+		redirectTo: "/"
+	});
 })

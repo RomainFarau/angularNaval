@@ -1,0 +1,8 @@
+<table border="1">
+	<tr ng-repeat="game in viewCtrl.games">
+		<td>{{game.name}}</td>
+		<td>{{game.user1.pseudo}}</td>
+		<td>{{game.user2.pseudo}}</td>
+		<td><button ng-click="viewCtrl.join(game)">join</button></td>
+	</tr>
+</table>
