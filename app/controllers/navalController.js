@@ -1,5 +1,5 @@
 "use strict";
 angular.module("navalModule")
-.controller('navalCtrl', function(){
-	
+.controller('navalController', function(){
+	//var navalCtrl = this;
 })

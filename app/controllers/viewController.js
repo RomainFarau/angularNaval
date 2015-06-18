@@ -1,6 +1,6 @@
 "use strict";
 angular.module("navalModule")
-.controller('ViewController', function(GameService){
+.controller('ViewController', function(GameService, $location){
 	var viewCtrl=this;
 
 	function fetchGames(){
@@ -17,4 +17,9 @@ angular.module("navalModule")
 				fetchGames();
 			})
 	}
+
+	viewCtrl.prepare = function (game){
+		$location.path("/prepare/"+game.id);
+	}
+
 })
