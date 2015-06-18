@@ -7,7 +7,7 @@ angular.module("navalModule")
 		pseudo: "Romain",
 		getAll: function () {
 					
-					var p = $http.get("http://192.168.229.21:3000/games")
+					return $http.get("http://192.168.229.21:3000/games")
 						.then(function (response){
 							return response.data;
 						})
@@ -18,7 +18,6 @@ angular.module("navalModule")
 										 || games.user2.pseudo === this.pseudo )
 							}.bind(this))
 						}.bind(this))
-					return p;
 		},
 
 		/*setUser: function () {
@@ -38,7 +37,7 @@ angular.module("navalModule")
 			game.user2 = {
 				pseudo: this.pseudo
 			}
-			return $http.put("http://192.168.229.21:3000/games"+"/"+game.id,game.id)
+			return $http.put("http://192.168.229.21:3000/games"+"/"+game.id,game)
 		},
 		fleetSizeValues:[
 			{fleetSize:0, label:"1 bateau"},

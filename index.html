@@ -12,11 +12,20 @@
 		<script src="app/controllers/formulaireController.js"></script>
 		<script src="app/controllers/viewController.js"></script>
 		<script src="app/services/GameService.js"></script>
+		<script src="app/directives/dtaPhoto.js"></script>
 	</head>
 	<body ng-app="navalModule">
 		<ng-include src="'view/header.html'"></ng-include>
 		<a href="#/">Home</a>
 		<a href="#/new">New</a>
+		<dta-photo couleur="red"></dta-photo>
+		<br>
+		<dta-photo couleur="green"></dta-photo>
+		<br>
+		<dta-photo></dta-photo>
+		<br>
+		<input type="number" ng-model="borderWidth">
+		{{borderWidth}}
 		<div ng-view></div>
 		<ng-include src="'view/footer.html'"></ng-include>
 	</body>
