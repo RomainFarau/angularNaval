@@ -3,6 +3,12 @@
 
 <table border="1" classe="battlefield">
 	<tr ng-repeat="row in prepareCtrl.rows track by $index">
-		<td ng-repeat="col in prepareCtrl.cols track by $index">a</td>
+		<td ng-repeat="col in prepareCtrl.cols track by $index"
+			ng-click="prepareCtrl.add($parent.$index,$index)">
+			{{prepareCtrl.battlefield[$index][$parent.$index]}}
+		</td>
 	</tr>
 </table>
+
+<p>Ready? :</p>
+<button ng-show="prepareCtrl.checkReady()" ng-click="prepareCtrl.saveBattleField()">Oui</button>
