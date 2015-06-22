@@ -1,0 +1,25 @@
+{
+  "name": "angularNaval",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomainFarau/angularNaval.git"
+  },
+  "author": "Romain Farau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainFarau/angularNaval/issues"
+  },
+  "homepage": "https://github.com/RomainFarau/angularNaval",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

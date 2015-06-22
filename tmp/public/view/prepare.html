@@ -1,0 +1,14 @@
+<p> Jeu {{prepareCtrl.game.id}}</p>
+<p> {{prepareCtrl.game.user1.pseudo}} vs {{prepareCtrl.game.user2.pseudo}}</p>
+
+<table border="1" classe="battlefield">
+	<tr ng-repeat="row in prepareCtrl.rows track by $index">
+		<td ng-repeat="col in prepareCtrl.cols track by $index"
+			ng-click="prepareCtrl.add($index,$parent.$index)">
+			{{prepareCtrl.battlefield[$parent.$index][$index]}}
+		</td>
+	</tr>
+</table>
+
+<p>Ready? :</p>
+<button ng-show="prepareCtrl.checkReady()" ng-click="prepareCtrl.saveBattleField()">Oui</button>
