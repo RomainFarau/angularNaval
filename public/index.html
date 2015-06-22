@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular-js</title>
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" ng-href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.min.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/config.js"></script>
+		<script src="app/controllers/formulaireController.js"></script>
+		<script src="app/controllers/viewController.js"></script>
+		<script src="app/services/GameService.js"></script>
+		<script src="app/controllers/prepareController.js"></script>
+		<script src="app/directives/dtaPhoto.js"></script>
+	</head>
+	<body ng-app="navalModule">
+		<!--ng-include src="'view/header.html'"></ng-include-->
+		<a href="#/">Home</a>
+		<a href="#/new">New</a>
+		<!--dta-photo couleur="red" border-width-scope="borderWidth" e=""></dta-photo>
+		<br>
+		<dta-photo couleur="green" border-width-scope="borderWidth" e=""></dta-photo>
+		<br>
+		<dta-photo border-width-scope="borderWidth" e=""></dta-photo-->
+		<br>
+		<!--input type="number" ng-model="borderWidth">
+		{{borderWidth}}-->
+		<div ng-view></div>
+		<!--ng-include src="'view/footer.html'"></ng-include-->
+	</body>
+</html>

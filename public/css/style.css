@@ -1,0 +1,16 @@
+.red{
+	color: red;
+}
+
+.battlefield{
+	border: solid 2px black;
+}
+.battlefield td{
+	width: 10px;
+	height: 10px;
+}
+
+.battlefield tr{
+	width: 10px;
+	height: 10px;
+}
