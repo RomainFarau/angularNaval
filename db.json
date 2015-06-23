@@ -15,6 +15,38 @@
       "user2": {
         "pseudo": "Romain"
       }
+    },
+    {
+      "name": "romain",
+      "user1": {
+        "email": "ee@fgg.com",
+        "pseudo": "Romain"
+      },
+      "battlefieldSize": {
+        "width": 5,
+        "height": 5
+      },
+      "fleetSize": 3,
+      "id": 2,
+      "user2": {
+        "pseudo": "Romain"
+      }
+    },
+    {
+      "name": "flflfl",
+      "user1": {
+        "email": "romain.farau@gmail.com",
+        "pseudo": "Romain"
+      },
+      "battlefieldSize": {
+        "width": 4,
+        "height": 7
+      },
+      "fleetSize": 4,
+      "id": 3,
+      "user2": {
+        "pseudo": "Romain"
+      }
     }
   ]
 }

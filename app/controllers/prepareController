@@ -1,5 +1,0 @@
-"use strict";
-angular.module("navalModule")
-.controller('prepareController', function(GameController){
-	var prepareCtrl = this;
-})

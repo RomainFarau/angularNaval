@@ -1,0 +1,17 @@
+{
+  "name": "RomainFarau",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "1.3.16",
+    "angular-route": "1.3.16",
+    "bootstrap": "~3.3.5"
+  }
+}
